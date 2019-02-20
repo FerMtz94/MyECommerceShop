@@ -15,11 +15,18 @@ namespace MyShop.Core.Models
         [StringLength(20)]
         [DisplayName("Nombre del Producto")]
         public string Name { set; get; }
+
+        [DisplayName("Descripción")]
         public string Description { set; get; }
 
         [Range(0, 1000)]
+        [DisplayName("Precio")]
         public decimal Price { set; get; }
+
+        [DisplayName("Categoría")]
         public string Category { set; get; }
+
+        [DisplayName("Imagen")]
         public string Image { set; get; }
 
         public Product()
